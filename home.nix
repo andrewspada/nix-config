@@ -6,6 +6,8 @@
 
   # YOU DONT NEED TO CHANGE THIS ON UPGRADES.
   # IT IS HERE TO ENSURE COMPAT WITH STATE FILES.
+  #
+  # thanks for listening babe <3
   home.stateVersion = "23.11";
 
   programs = {

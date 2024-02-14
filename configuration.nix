@@ -29,6 +29,16 @@
     pkgs.git # need this for updating from a flake!!!!
   ];
 
+  # In particular, git needs to be installed for this to work
+  system.autoUpgrade = {
+    enable = true;
+    flake = "github:andrewspada/nix-config";
+    flags = [
+      "--update-input" "nixpkgs"
+      "--no-write-lock-file"
+    ];
+  };
+
   users = {
     mutableUsers = false;
     users.andrew = {
