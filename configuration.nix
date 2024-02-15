@@ -40,6 +40,7 @@
     flake = "github:andrewspada/nix-config";
     flags = [
       "--update-input" "nixpkgs"
+      "--update-input" "home-manager"
       "--no-write-lock-file"
     ];
   };
