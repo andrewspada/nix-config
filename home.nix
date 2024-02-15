@@ -10,6 +10,10 @@
   # thanks for listening babe <3
   home.stateVersion = "23.11";
 
+  dconf.settings = {
+    "org/gnome/desktop/interface".clock-format = "12h";
+  };
+      
   programs = {
     git = {
       enable = true;
