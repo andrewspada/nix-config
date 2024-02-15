@@ -24,6 +24,15 @@
       };
     };
 
+    emacs = {
+      enable = true;
+      extraPackages = epkgs: [
+        epkgs.magit
+	      epkgs.nix-mode
+        epkgs.ws-butler
+      ];
+    };
+
     firefox.enable = true;
   };
 }
