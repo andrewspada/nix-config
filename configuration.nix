@@ -11,6 +11,11 @@
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.gc = {
+  	 automatic = true;
+	 dates = "Mon *-*-* 03:15:00";
+  };
+  
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
