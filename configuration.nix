@@ -24,6 +24,11 @@
  
   time.timeZone = "America/New_York";
 
+  hardware.opengl = {
+    enable = true;
+    driSupport32Bit = true;
+  };
+
   services.xserver = {
     enable = true;
     desktopManager.gnome.enable = true;
