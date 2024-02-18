@@ -34,6 +34,8 @@
     pkgs.git # need this for updating from a flake!!!!
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   # In particular, git needs to be installed for this to work
   system.autoUpgrade = {
     enable = true;

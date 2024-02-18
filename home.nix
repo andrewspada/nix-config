@@ -4,6 +4,7 @@
   home.username = "andrew";
   home.homeDirectory = "/home/andrew";
   home.packages = [
+    pkgs.lutris
     pkgs.transmission-gtk
   ];
   # YOU DONT NEED TO CHANGE THIS ON UPGRADES.
@@ -15,7 +16,7 @@
   dconf.settings = {
     "org/gnome/desktop/interface".clock-format = "12h";
   };
-      
+
   programs = {
     git = {
       enable = true;
