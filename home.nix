@@ -3,7 +3,9 @@
 {
   home.username = "andrew";
   home.homeDirectory = "/home/andrew";
-
+  home.packages = [
+    pkgs.transmission-gtk
+  ];
   # YOU DONT NEED TO CHANGE THIS ON UPGRADES.
   # IT IS HERE TO ENSURE COMPAT WITH STATE FILES.
   #
