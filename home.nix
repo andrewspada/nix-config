@@ -6,6 +6,7 @@
   home.packages = [
     pkgs.lutris
     pkgs.transmission-gtk
+    pkgs.discord
   ];
   # YOU DONT NEED TO CHANGE THIS ON UPGRADES.
   # IT IS HERE TO ENSURE COMPAT WITH STATE FILES.
