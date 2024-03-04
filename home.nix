@@ -38,6 +38,8 @@
         epkgs.ws-butler
       ];
 
+      extraConfig = builtins.readFile ./emacs/init.el;
+
       # Seems to be fixed in 24.05, no longer needed by then
       overrides = self: super: {
         # Taken from https://github.com/magit/magit/issues/5011#issuecomment-1838598138
