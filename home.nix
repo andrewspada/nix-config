@@ -7,6 +7,8 @@
     pkgs.lutris
     pkgs.transmission-gtk
     pkgs.discord
+    pkgs.onlykey-cli
+    pkgs.libfido2
   ];
   # YOU DONT NEED TO CHANGE THIS ON UPGRADES.
   # IT IS HERE TO ENSURE COMPAT WITH STATE FILES.
