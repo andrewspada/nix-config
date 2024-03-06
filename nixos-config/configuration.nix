@@ -64,7 +64,7 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.andrew = import ./home.nix;
+    users.andrew = import ../home-config/andrew-PDP-11.nix;
   };
 
   hardware.onlykey.enable = true;
