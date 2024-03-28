@@ -23,6 +23,7 @@ in {
 
   config = {
     home.packages = [
+      pkgs.texlive.combined.scheme-full
       pkgs.transmission-gtk
       pkgs.discord
       pkgs.ffmpeg
