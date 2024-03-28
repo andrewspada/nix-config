@@ -51,8 +51,14 @@ in {
       emacs = {
         enable = true;
         extraPackages = epkgs: [
+          epkgs.auctex
+          epkgs.company
+          epkgs.eglot
+          epkgs.exec-path-from-shell
+          epkgs.haskell-mode
           epkgs.magit
 	        epkgs.nix-mode
+          epkgs.pdf-tools
           epkgs.ws-butler
         ];
 
