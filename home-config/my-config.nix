@@ -57,6 +57,7 @@ in {
           epkgs.exec-path-from-shell
           epkgs.haskell-mode
           epkgs.magit
+          epkgs.markdown-mode
 	        epkgs.nix-mode
           epkgs.pdf-tools
           epkgs.ws-butler
