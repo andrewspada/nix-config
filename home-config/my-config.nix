@@ -43,6 +43,10 @@ in {
         enable = true;
         userEmail = "spada.andrew.j@gmail.com";
         userName = "Andrew Spada";
+        ignores = [
+          "*~"
+          "#*#"
+        ];
         extraConfig = {
           init.defaultBranch = "main";
         };
