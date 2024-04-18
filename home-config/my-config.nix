@@ -72,6 +72,7 @@ in {
           epkgs.markdown-mode
           epkgs.nix-mode
           epkgs.pdf-tools
+          epkgs.rust-mode
           epkgs.ws-butler
         ];
 
