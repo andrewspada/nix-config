@@ -15,14 +15,21 @@
       url = "github:hraban/mac-app-util";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    fenix = {
+      url = "github:nix-community/fenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nix-darwin, home-manager, mac-app-util }: {
+  outputs = { self, nixpkgs, nix-darwin, home-manager, mac-app-util, fenix }: {
     nixosConfigurations.PDP-11 = nixpkgs.lib.nixosSystem {
       system = "x86_64";
       modules = [
         ./nixos-config/configuration.nix
         home-manager.nixosModules.home-manager
+        {
+          nixpkgs.overlays = [ fenix.overlays.default ];
+        }
       ];
     };
     darwinConfigurations.Andrews-MacBook-Pro = nix-darwin.lib.darwinSystem {
@@ -33,6 +40,7 @@
         mac-app-util.darwinModules.default
         {
           home-manager.users.andrew.imports = [ mac-app-util.homeManagerModules.default ];
+          nixpkgs.overlays = [ fenix.overlays.default ];
         }
       ];
     };

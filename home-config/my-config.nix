@@ -27,6 +27,14 @@ in {
       pkgs.transmission-gtk
       pkgs.discord
       pkgs.ffmpeg
+      (pkgs.fenix.complete.withComponents [
+        "rustc"
+        "rust-src"
+        "cargo"
+        "rust-analyzer"
+        "rustfmt"
+        "clippy"
+      ])
     ];
     # YOU DONT NEED TO CHANGE THIS ON UPGRADES.
     # IT IS HERE TO ENSURE COMPAT WITH STATE FILES.
